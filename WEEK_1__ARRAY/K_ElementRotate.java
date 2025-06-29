@@ -23,17 +23,19 @@ public class K_ElementRotate {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
         }
-        System.out.print("Enter how menu time you want to rotate array : ");
-        int rotate = sc.nextInt();
-        reversePart(0, arr.length-1-rotate, arr); // this rotate the rest part of the array
-        reversePart(arr.length-rotate, arr.length-1, arr); // this rotate the last element how many time array
 
-        reversePart(0, arr.length-1, arr); // rotate comete array
+        System.out.print("Enter how many time you want to rotate array : ");
+        int rotate = sc.nextInt();
+        
+        reversePart(0, arr.length-1-rotate, arr); 
+        reversePart(arr.length-rotate, arr.length-1, arr); 
+        reversePart(0, arr.length-1, arr);
 
         System.out.print("Elements of array after k element reverse : ");
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
-
     }
 }
+
+

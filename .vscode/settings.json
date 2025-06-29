@@ -1,3 +1,10 @@
 {
-  "cSpell.words": ["Rahul"]
+  "cSpell.words": [
+    "Rahul"
+  ],
+  "python.testing.pytestArgs": [
+    "zzz"
+  ],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true
 }

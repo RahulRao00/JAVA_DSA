@@ -1,7 +1,6 @@
 import java.util.*;
 
 public class FindElement {
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -13,6 +12,7 @@ public class FindElement {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
         }
+
         System.out.print("Enter the element that you want to search in the array : ");
         int target = sc.nextInt();
         int ans = search(arr, target);
@@ -20,7 +20,6 @@ public class FindElement {
             System.out.println("Element not found in the array ");
         else
             System.out.println("At index : " + ans);
-
     }
 
     public static int search(int[] arr, int target) {
@@ -28,9 +27,7 @@ public class FindElement {
             if (arr[i] == target) {
                 return i;
             }
-
         }
         return -1;
-
     }
 }

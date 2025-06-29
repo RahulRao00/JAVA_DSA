@@ -23,6 +23,7 @@ public class SecondMax {
                 max = arr[i];
             }
         }
+        
         // to check the second maximum element in the array 
         for(int i = 0;i<arr.length-1; i++){
             if(arr[i] == max ){
