@@ -32,7 +32,7 @@ public class Child {
         for (int i = 0; i < 5; i++) {
             MultiThreading myThing2 = new MultiThreading(i);
             myThing2.start();
-            myThing2.join();
+            // myThing2.join();
         }
 
     }
