@@ -1,4 +1,4 @@
-package src.Week_8_OOP_java.ClassesObject;
+package src.WEEK_8_OOP_java.ClassesObject;
 public class L_0_ClassObjects {
 
     String name = "Rahul";

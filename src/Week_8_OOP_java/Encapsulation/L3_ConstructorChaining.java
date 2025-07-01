@@ -1,4 +1,4 @@
-package src.Week_8_OOP_java.Encapsulation;
+package src.WEEK_8_OOP_java.Encapsulation;
 // package Encapsulation;
 // Local Chaining 
 class Customer {

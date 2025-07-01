@@ -1,4 +1,4 @@
-package src.Week_4_Sorting;
+package src.WEEK_4_Sorting;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 

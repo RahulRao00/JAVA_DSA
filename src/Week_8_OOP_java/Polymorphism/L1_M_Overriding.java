@@ -1,4 +1,4 @@
-package src.Week_8_OOP_java.Polymorphism;
+package src.WEEK_8_OOP_java.Polymorphism;
 // package Polymorphism;
 
 class Parent {

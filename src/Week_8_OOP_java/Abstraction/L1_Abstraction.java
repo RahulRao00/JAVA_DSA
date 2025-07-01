@@ -1,4 +1,4 @@
-package src.Week_8_OOP_java.Abstraction;
+package src.WEEK_8_OOP_java.Abstraction;
 import java.util.Scanner;
 
 // Inside a class if a single method is abstract declare class as abstract 

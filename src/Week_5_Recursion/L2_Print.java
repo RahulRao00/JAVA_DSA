@@ -1,4 +1,4 @@
-package src.Week_5_Recursion;
+package src.WEEK_5_Recursion;
 import java.util.Scanner;
 
 public class L2_Print {

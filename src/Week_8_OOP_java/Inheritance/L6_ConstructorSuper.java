@@ -1,4 +1,4 @@
-package src.Week_8_OOP_java.Inheritance;
+package src.WEEK_8_OOP_java.Inheritance;
 
 class BankAccount {
     private int accNum;

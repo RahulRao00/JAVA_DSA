@@ -1,4 +1,4 @@
-package src.Week_8_OOP_java.ClassesObject;
+package src.WEEK_8_OOP_java.ClassesObject;
    
    class Student {
         String name;
