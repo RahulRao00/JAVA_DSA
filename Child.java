@@ -1,41 +1,31 @@
 
-class MultiThreading extends Thread {
+class Node {
 
-    private int thread;
+    int data;
+    Node next;
 
-    public MultiThreading(int thread) {
-        this.thread = thread;
+    Node(int data) {
+        this.data = data;
+        this.next = null;
     }
 
-    @Override
-    public void run() {
-        for (int i = 0; i < 5; i++) {
-            if (thread == 3)
-                throw new RuntimeException();
-            System.out.println(i + "from thread " + thread);
-
-            try {
-                Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                // TODO: handle exception
-            }
-        }
-    }
 }
-
 
 public class Child {
 
     public static void main(String[] args) {
 
-        // this run 5 thread a time
-        for (int i = 0; i < 5; i++) {
-            MultiThreading myThing2 = new MultiThreading(i);
-            myThing2.start();
-            // myThing2.join();
+        Node head = new Node(10);
+        head.next = new Node(20);
+        head.next.next = new Node(30);
+
+        Node temp = head;
+
+        while (temp.next != null) {
+            System.out.print(temp.data + " -> ");
+            temp = temp.next;
+
         }
 
     }
-
-
 }
