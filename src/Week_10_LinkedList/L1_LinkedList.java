@@ -1,5 +1,3 @@
-package src.WEEK_10_LinkedList;
-// package src.Week_10_LinkedList;
 
 class Node {
 
@@ -14,6 +12,14 @@ class Node {
 
 public class L1_LinkedList {
 
+    // print using recursion 
+    public static void displayRecursive( Node head) {
+        if(head == null) return;
+        System.out.println(head.data);
+        displayRecursive(head.next);
+
+    }
+
     public static void main(String[] args) {
 
         Node a = new Node(10); // head node
@@ -27,14 +33,25 @@ public class L1_LinkedList {
         c.next = d; // 10 -> 20 -> 30 -> 40
         d.next = e; // 10 -> 20 -> 30 -> 40 -> 50
 
-        Node temp = a;
-        while (temp.next != null) {
+        // System.out.println(a.data);
+        // System.out.println(a.next.data);
+        // System.out.println(a.next.next.data);
+        // System.out.println(a.next.next.next.data);
+        // System.out.println(a.next.next.next.next.data);
 
-            System.out.print(temp.data + " -> ");
-            temp = temp.next;
+        Node temp = a; // this is reference Node
 
-        }
-        System.out.print(temp.data);
+        // while (temp.next != null) {
+
+        //     System.out.print(temp.data + " -> ");
+        //     temp = temp.next;
+        // }
+        // System.out.print(temp.data);
+
+
+        System.out.println("Using recursion ");
+        displayRecursive(temp);
 
     }
 }
+

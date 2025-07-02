@@ -1,5 +1,3 @@
-package src.WEEK_10_LinkedList;
-// package src.Week_10_LinkedList;
 
 
 // Node creating in which there is  data and reference variable 

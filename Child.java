@@ -20,12 +20,8 @@ public class Child {
         head.next.next = new Node(30);
 
         Node temp = head;
+        System.out.println(temp);
 
-        while (temp.next != null) {
-            System.out.print(temp.data + " -> ");
-            temp = temp.next;
-
-        }
 
     }
 }
