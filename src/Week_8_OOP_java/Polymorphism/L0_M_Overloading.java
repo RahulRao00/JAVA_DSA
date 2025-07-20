@@ -1,4 +1,4 @@
-package src.WEEK_8_OOP_java.Polymorphism;
+// package src.WEEK_8_OOP_java.Polymorphism;
 
 public class L0_M_Overloading {
 
@@ -7,7 +7,7 @@ public class L0_M_Overloading {
         return a + b;
     }
 
-    int sum(int a, int b, int c) {
+    double sum(int a, int b, int c) {
         return a + b + c;
     }
 
@@ -18,9 +18,5 @@ public class L0_M_Overloading {
         System.out.println(obj.sum(2, 3, 5));
     }
 }
-
- 
-
-
 
 

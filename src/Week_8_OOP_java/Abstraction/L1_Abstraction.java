@@ -1,20 +1,22 @@
-package src.WEEK_8_OOP_java.Abstraction;
 import java.util.Scanner;
 
 // Inside a class if a single method is abstract declare class as abstract 
+// We can also create class as abstract without even abstract method 
+
 abstract class Shape {
 
     float area;
 
-
+    // abstract method -> without body -> incomplete method 
     abstract void acceptInput();
 
     abstract void calcArea();
 
+    // concrete method -> complete method ->  method with body
     void disArea() {
         System.out.println(area);
     }
-}   
+}
 
 class Square extends Shape {
 
@@ -40,9 +42,9 @@ class Rectangle extends Shape {
     void acceptInput() {
 
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the length of the rectangle ");
+        System.out.print("Enter the length of the rectangle : ");
         length = sc.nextFloat();
-        System.out.println("Enter the breadth of the rectangle ");
+        System.out.print("Enter the breadth of the rectangle : ");
         breadth = sc.nextFloat();
     }
 
@@ -58,6 +60,7 @@ class Circle extends Shape {
 
     void acceptInput() {
         Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the redius of square : ");
         radius = sc.nextFloat();
     }
 
@@ -67,17 +70,27 @@ class Circle extends Shape {
     }
 }
 
-public class L1_Abstraction {
+class Geometry {
 
+    // loose coupling 
+    void permit(Shape ref) {
+        ref.acceptInput();
+        ref.calcArea();
+        ref.disArea();
+    }
+}
+
+public class L1_Abstraction {
     public static void main(String[] args) {
 
-        Square sq = new Square();
-        Rectangle re = new Rectangle();
-        Circle ci = new Circle();
+        Shape sq = new Square();
+        Shape re = new Rectangle();
+        Shape ci = new Circle();
 
-        sq.acceptInput();
-        sq.calcArea();
-        sq.disArea();
-
+        Geometry g = new Geometry();
+        g.permit(sq);
+        g.permit(re);
+        g.permit(ci);
+       
     }
 }

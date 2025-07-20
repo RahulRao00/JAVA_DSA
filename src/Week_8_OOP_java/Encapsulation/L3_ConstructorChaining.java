@@ -11,7 +11,7 @@ class Customer {
     }
 
     public Customer() {
-        this("NO_Name")
+        this("NO_Name");
         cID = 1;
         cName = "Rahul";
         cNum = 234523563;

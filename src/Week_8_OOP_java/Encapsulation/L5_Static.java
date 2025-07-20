@@ -8,8 +8,8 @@ class BusinessMen {
     private float si;
     static private float r;
 
-    static{
-        r = 12.5f
+    static {
+        r = 12.5f;
     }
 
     public void acceptInput() {

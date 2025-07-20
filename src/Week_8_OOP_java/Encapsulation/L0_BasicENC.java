@@ -1,7 +1,7 @@
 package src.WEEK_8_OOP_java.Encapsulation;
 // package Encapsulation;
 
- class BankAccount {
+class BankAccount {
 
     // Achieve Encapsulation by data security
     private int bal;
@@ -22,6 +22,7 @@ package src.WEEK_8_OOP_java.Encapsulation;
         return bal;
     }
 }
+
 
 public class L0_BasicENC {
 
