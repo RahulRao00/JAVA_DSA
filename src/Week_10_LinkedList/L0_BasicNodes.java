@@ -1,6 +1,9 @@
+// package src.WEEK_10_LinkedList;
 
 
 // Node creating in which there is  data and reference variable 
+// reference variable over here is also of type node which further have  data and node 
+ 
 class Node {
 
     int data ;
@@ -10,9 +13,7 @@ class Node {
         this.data = data;
         this.next = null;
     }
-
 }
-
 
 public class L0_BasicNodes {
 

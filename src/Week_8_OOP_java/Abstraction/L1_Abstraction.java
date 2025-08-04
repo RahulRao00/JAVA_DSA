@@ -72,7 +72,7 @@ class Circle extends Shape {
 
 class Geometry {
 
-    // loose coupling 
+    // loose coupling  -> to achieve true  polymorphism 
     void permit(Shape ref) {
         ref.acceptInput();
         ref.calcArea();

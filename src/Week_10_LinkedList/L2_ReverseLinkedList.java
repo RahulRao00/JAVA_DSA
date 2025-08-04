@@ -1,13 +1,5 @@
-class Node {
+// package src.WEEK_10_LinkedList;
 
-    int data;
-    Node next;
-
-    Node(int data) {
-        this.data = data;
-        // this.next = null;
-    }
-}
 
 public class L2_ReverseLinkedList {
 
@@ -18,9 +10,8 @@ public class L2_ReverseLinkedList {
         reverseLinkedList(head.next);
         System.out.print(head.data + " -> ");
         // reverseLinkedList(head.next);
-
     }
-
+    
     public static void main(String[] args) {
 
         Node a = new Node(10); // head node

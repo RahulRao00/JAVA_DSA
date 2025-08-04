@@ -1,14 +1,5 @@
+// package src.WEEK_10_LinkedList;
 
-class Node {
-
-    int data;
-    Node next;
-
-    Node(int data) {
-        this.data = data;
-        // this.next = null;
-    }
-}
 
 public class L1_LinkedList {
 
@@ -42,7 +33,6 @@ public class L1_LinkedList {
         Node temp = a; // this is reference Node
 
         // while (temp.next != null) {
-
         //     System.out.print(temp.data + " -> ");
         //     temp = temp.next;
         // }

@@ -78,7 +78,7 @@ class FighterPlane extends Plane {
             plane.land();
 
             // If you want to call specialized methods of child → use type casting to child
-            // down casting -> parent to child   -> so can get specialized method as well 
+            // down casting -> parent into child   -> so can get specialized method as well 
             if (plane instanceof CargoPlane) {
 
                 ((CargoPlane) plane).carryCargo();

@@ -25,7 +25,6 @@ class Charger {
     int getVoltage() {
         return voltage;
     }
-
 }
 
 class OS {

@@ -1,12 +1,20 @@
 
-class Node {
+class SLL {
+    Node head;
+    Node tail;
+    int size;
 
-    int data;
-    Node next;
-
-    Node(int data) {
-        this.data = data;
-        this.next = null;
+    void insertAtEnd(int data) {
+        Node temp = new Node(data);
+        if( head == null) {
+            head = temp;
+            tail  = temp;
+        }
+        else {
+            tail.next = temp;
+            tail = temp;
+        }
+        size++;
     }
 
 }
@@ -15,13 +23,16 @@ public class Child {
 
     public static void main(String[] args) {
 
-        Node head = new Node(10);
-        head.next = new Node(20);
-        head.next.next = new Node(30);
+        SLL list = new SLL();
+        list.insertAtEnd(10);
+        list.insertAtEnd(20);
+        list.insertAtEnd(30);
+        list.insertAtEnd(40);
+        list.insertAtEnd(50);
+        list.insertAtEnd(60);
+        list.insertAtEnd(70);
 
-        Node temp = head;
-        System.out.println(temp);
-
+    
 
     }
 }
