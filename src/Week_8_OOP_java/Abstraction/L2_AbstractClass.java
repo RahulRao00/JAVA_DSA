@@ -1,4 +1,4 @@
-// package src.WEEK_8_OOP_java.Abstraction;
+package src.WEEK_8_OOP_java.Abstraction;// package src.WEEK_8_OOP_java.Abstraction;
 
 
 // An abstract class whose object can't be created 
@@ -25,7 +25,12 @@ public class L2_AbstractClass {
 
     public static void main(String[] args) {
         
-        User u = new User();
+        User u = new User() {
+            @Override
+            void scanQR() {
+
+            }
+        };
         u.checkBalance();
         u.makePayment();
 

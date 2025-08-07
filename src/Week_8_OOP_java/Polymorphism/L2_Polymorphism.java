@@ -1,4 +1,4 @@
- class Plane {
+ class Plane1 {
 
     void takeOff() {
         System.out.println("Plane is taking off.... ");
@@ -14,7 +14,7 @@
 
 }
 
-class CargoPlane extends Plane {
+class CargoPlane1 extends Plane1 {
 
     void fly() {
         System.out.println("Cargo is Flying at Low Height... ");
@@ -25,7 +25,7 @@ class CargoPlane extends Plane {
     }
 }
 
-class PassengerPlane extends Plane {
+class PassengerPlane1 extends Plane1 {
 
     void fly() {
         System.out.println("Passenger fly at the Medium height... ");
@@ -37,7 +37,7 @@ class PassengerPlane extends Plane {
 
 }
 
-class FighterPlane extends Plane {
+class FighterPlane1 extends Plane1 {
 
     void fly() {
         System.out.println("Fighter Planes fly at very high Height...");
@@ -62,32 +62,32 @@ class FighterPlane extends Plane {
 
 
         // Array of parent references pointing to child objects
-        Plane planes[] = {
-                new CargoPlane(),
-                new FighterPlane(),
-                new PassengerPlane()
+        Plane1 planes[] = {
+                new CargoPlane1(),
+                new FighterPlane1(),
+                new PassengerPlane1()
         };
 
         // planes[0].fly();
         // planes[1].fly();
 
         // Loop using parent reference – full runtime polymorphism
-        for (Plane plane : planes) {
+        for (Plane1 plane : planes) {
             plane.fly();
             plane.takeOff();
             plane.land();
 
             // If you want to call specialized methods of child → use type casting to child
             // down casting -> parent into child   -> so can get specialized method as well 
-            if (plane instanceof CargoPlane) {
+            if (plane instanceof CargoPlane1) {
 
-                ((CargoPlane) plane).carryCargo();
-            } else if (plane instanceof FighterPlane) {
+                ((CargoPlane1) plane).carryCargo();
+            } else if (plane instanceof FighterPlane1) {
 
-                ((FighterPlane) plane).carryWeapon();
+                ((FighterPlane1) plane).carryWeapon();
             } else {
 
-                ((PassengerPlane) plane).carryPassenger();
+                ((PassengerPlane1) plane).carryPassenger();
             }
 
         }

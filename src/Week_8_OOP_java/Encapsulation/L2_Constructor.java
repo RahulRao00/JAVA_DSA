@@ -1,13 +1,13 @@
 package src.WEEK_8_OOP_java.Encapsulation;
 // package Encapsulation;
 
-class Costumer {
+class Costumer1{
 
     private int cId;
     private String cName;
     private long cNum;
 
-    public Costumer(int cId, String cName, long cNum) {
+    public Costumer1(int cId, String cName, long cNum) {
         // this resolve shadowing problem
         this.cId = cId;
         this.cName = cName;
@@ -15,7 +15,7 @@ class Costumer {
 
     }
 
-    public Costumer() {
+    public Costumer1() {
         cId = 01;
         cName = "RahulRao";
         cNum = 1234512345;
@@ -38,13 +38,13 @@ class Costumer {
 public class L2_Constructor {
     public static void main(String[] args) {
 
-        Costumer c = new Costumer(1, "Rahul", 1234561234);
+        Costumer1 c = new Costumer1(1, "Rahul", 1234561234);
         // c.setData(1, "Rahul", 1234561234);
         System.out.println(c.getCid());
         System.out.println(c.getCname());
         System.out.println(c.getCnum());
 
-        Costumer c1 = new Costumer();
+        Costumer1 c1 = new Costumer1();
         System.out.println(c1.getCid());
         System.out.println(c1.getCname());
         System.out.println(c1.getCnum());

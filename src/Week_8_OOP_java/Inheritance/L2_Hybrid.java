@@ -1,12 +1,12 @@
 package src.WEEK_8_OOP_java.Inheritance;
 
-class Parent {
+class Parent0 {
     void print() {
         System.out.println("This is parent class");
     }
 }
 
-class L2_Hybrid  extends Parent {
+class L2_Hybrid  extends Parent0 {
     public static void main(String[] args) {
     
         L2_Hybrid ch = new L2_Hybrid();
@@ -17,7 +17,7 @@ class L2_Hybrid  extends Parent {
     }
 }
 
-class Hybrid  extends Parent {
+class Hybrid  extends Parent0 {
     public static void main(String[] args) {
         
         Hybrid ch = new Hybrid();

@@ -1,7 +1,7 @@
-// package src.WEEK_8_OOP_java.Polymorphism;
+package src.WEEK_8_OOP_java.Polymorphism;
 
 
-class Plane {
+class Plane0 {
 
     void takeOff() {
         System.out.println("Plane is taking off.... ");
@@ -17,7 +17,7 @@ class Plane {
 
 }
 
-class CargoPlane extends Plane {
+class CargoPlane0 extends Plane0 {
 
     void fly() {
         System.out.println("Cargo is Flying at Low Height... ");
@@ -28,7 +28,7 @@ class CargoPlane extends Plane {
     }
 }
 
-class PassengerPlane extends Plane {
+class PassengerPlane0 extends Plane0 {
 
     void fly() {
         System.out.println("Passenger fly at the Medium height... ");
@@ -40,7 +40,7 @@ class PassengerPlane extends Plane {
 
 }
 
-class FighterPlane extends Plane {
+class FighterPlane0 extends Plane0 {
 
     void fly() {
         System.out.println("Fighter Planes fly at very high Height...");
@@ -55,7 +55,7 @@ class FighterPlane extends Plane {
 class Airport {
 
     // this method is loosely coupled work for different parameters, true polymorphism 
-    void permit( Plane ref) {
+    void permit( Plane0 ref) {
 
         ref.fly();
         ref.land();
@@ -69,9 +69,9 @@ class Airport {
     public static void main(String[] args) {
 
     //    tightly coupled 
-        CargoPlane cp = new CargoPlane();
-        FighterPlane fp = new FighterPlane();
-        PassengerPlane pp = new PassengerPlane();
+        CargoPlane0 cp = new CargoPlane0();
+        FighterPlane0 fp = new FighterPlane0();
+        PassengerPlane0 pp = new PassengerPlane0();
 
         Airport ap = new Airport();
         ap.permit(cp);

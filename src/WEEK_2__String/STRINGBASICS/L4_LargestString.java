@@ -1,7 +1,8 @@
 package src.WEEK_2__String.STRINGBASICS;
-public class L4_LargestString 
+
+public class L4_LargestString {
     public static void main(String[] args) {
- 
+
         String str1 = "aaabcd";
         String str2 = "aaabce";
 
@@ -24,7 +25,7 @@ public class L4_LargestString
         System.out.println(str1.compareTo(str2));
         System.out.println("Rahul".compareToIgnoreCase("rahul"));
 
-        String fruits[] = { "apple", "banana", "mango" };
+        String fruits[] = {"apple", "banana", "mango"};
         String largest = fruits[0];
         for (int k = 1; k < fruits.length; k++) {
             if (largest.compareTo(fruits[k]) < 0) {
@@ -34,8 +35,6 @@ public class L4_LargestString
         System.out.println(largest);
     }
 
-
-
-    
+}
 
 

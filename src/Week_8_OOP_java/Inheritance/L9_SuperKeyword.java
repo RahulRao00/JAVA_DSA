@@ -1,10 +1,10 @@
 package src.WEEK_8_OOP_java.Inheritance;
 
-class Demo1 {
+class Demo_1 {
     int x = 100;
 }
 
-class Demo2 extends Demo1 {
+class Demo_2 extends Demo_1 {
 
     int x = 200;
 
@@ -18,7 +18,7 @@ class Demo2 extends Demo1 {
 public class L9_SuperKeyword {
 
     public static void main(String[] args) {
-        Demo2 d2 = new Demo2();
+        Demo_2 d2 = new Demo_2();
         d2.display();
 
     }

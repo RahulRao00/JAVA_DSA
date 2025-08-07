@@ -1,13 +1,13 @@
+package src.WEEK_8_OOP_java.Interface;
 
-
-interface Calculator {
+interface Calculator0 {
 
     void add();
     void sub();
 
 }
 
-class MyCalculator implements Calculator{
+class MyCalculator1 implements Calculator0 {
 
     public void add() {
         System.out.println(10+202);
@@ -29,12 +29,12 @@ public class L1_InterfaceSpecialized {
     public static void main(String[] args) {
         
 
-        Calculator m = new MyCalculator();
+        Calculator0 m = new MyCalculator1();
         m.add();
         m.sub();
 
         // down casting parent int child type  
-        ((MyCalculator) m).mul();
+        ((MyCalculator1) m).mul();
 
     }
 

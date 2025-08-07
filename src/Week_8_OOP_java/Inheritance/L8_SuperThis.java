@@ -1,10 +1,10 @@
 package src.WEEK_8_OOP_java.Inheritance;
 
-class Test1 {
+class Test_1 {
 
     int x, y;
 
-    Test1() {
+    Test_1() {
 
         // super();
         System.out.println("0- parameterized constructor of parent ");
@@ -12,7 +12,7 @@ class Test1 {
         y = 200;
     }
 
-    Test1(int x, int y) {
+    Test_1(int x, int y) {
 
         // super();
         System.out.println("Parametrized of parent ");
@@ -21,17 +21,17 @@ class Test1 {
     }
 }
 
-class Test2 extends Test1 {
+class Test_2 extends Test_1 {
     int a, b;
 
-    Test2() {
+    Test_2() {
         this(9, 99);
         System.out.println("0-para of child ");
         this.a = 300;
         this.b = 400;
     }
 
-    Test2(int a, int b) {
+    Test_2(int a, int b) {
 
         // super();
         System.out.println("pare of child");
@@ -51,7 +51,7 @@ class Test2 extends Test1 {
 public class L8_SuperThis {
     public static void main(String[] args) {
 
-        Test2 t2 = new Test2();
+        Test_2 t2 = new Test_2();
         t2.display();
 
     }

@@ -12,7 +12,7 @@ public class L11_CompressStr {
         Arrays.sort(ch);
         System.out.println(ch);
 
-        for(int i  = 0; i<length; i++) {
+        for(int i  = 0; i< ch.length; i++) {
            
             }
         }

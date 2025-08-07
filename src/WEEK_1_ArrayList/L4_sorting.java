@@ -15,6 +15,7 @@ public class L4_sorting {
             arr.add(sc.nextInt());
             i++;
         }
+
         System.out.println(arr);
         Collections.sort(arr);
         System.out.println(arr);

@@ -9,8 +9,8 @@ public class L1_BubbleSort {
         for(int i = 0; i< arr.length; i++) {
 
             for(int j = 0; j< arr.length; j++)  {
-                if(arr[i] < arr[i+!] ) {
-                    mid = arr[i];
+                if(arr[i] < arr[i+1] ) {
+                    int mid = arr[i];
                 }
             }
         }

@@ -1,13 +1,13 @@
-// package src.WEEK_8_OOP_java.Inheritance;
+package src.WEEK_8_OOP_java.Inheritance;// package src.WEEK_8_OOP_java.Inheritance;
 // Multiple inheritance in not allowed 
 
-class Demo1 {
+class Demo_3 {
     void fun1() {
 
     }
 }
 
-class Demo2 extends Demo1 {
+class Demo4 extends Demo_3 {
 
     void fun2() {
 
@@ -22,7 +22,7 @@ class Demo2 extends Demo1 {
 
 public class L3_MultipleInheritance {
     public static void main(String[] args) {
-        Demo3 d3 = new Demo3();
+        Demo_3 d3 = new Demo_3();
     }
     
 }

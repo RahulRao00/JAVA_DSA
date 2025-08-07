@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 class BusinessMen {
 
+    Scanner sc = new Scanner(System.in);
     private float p;
     private float t;
     private float si;
@@ -13,7 +14,7 @@ class BusinessMen {
     }
 
     public void acceptInput() {
-        Scanner sc = new Scanner(System.in);
+
         System.out.println("Enter the loan amount");
         p = sc.nextFloat();
         System.out.println("Enter the tenure ");
@@ -27,18 +28,20 @@ class BusinessMen {
     public void display() {
         System.out.println(si);
     }
-
 }
 
 
 
 public class L5_Static {
-    
-    BusinessMen b1 = new BusinessMen();
-    b1.acceptInput();
-    b1.calcInterest();
-    b1.display();
+    public static void main(String[] args) {
 
-    BusinessMen b2 = new BusinessMen();
 
+        BusinessMen b1 = new BusinessMen();
+        b1.acceptInput();
+        b1.calcInterest();
+        b1.display();
+
+        BusinessMen b2 = new BusinessMen();
+
+    }
 }
