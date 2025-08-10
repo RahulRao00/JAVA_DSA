@@ -1,3 +1,5 @@
+package src.WEEK_1__ARRAY;
+
 import java.util.Scanner;
 public class MaxElement {
 

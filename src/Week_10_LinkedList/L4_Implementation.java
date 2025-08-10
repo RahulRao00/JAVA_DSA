@@ -1,15 +1,4 @@
- package src.WEEK_10_LinkedList;
-
-class Node {
-
-    int data;
-    Node next;
-
-    Node(int data) {
-        this.data = data;
-        this.next = null;
-    }
-}
+package src.WEEK_10_LinkedList;
 
 class SLL {
 
@@ -81,7 +70,7 @@ class SLL {
     // this will display the linkedList
     void displaySLL() {
         Node temp = head;
-        
+
         while (temp != null) {
             System.out.print(temp.data + " ");
             temp = temp.next;

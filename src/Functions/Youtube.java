@@ -1,4 +1,6 @@
-    import java.util.*;
+package src.Functions;
+
+import java.util.*;
    public class Youtube {
         
         public static void main(String[] args) {

@@ -1,5 +1,6 @@
-  
-    public class FunctionPassingArray {
+package src.WEEK_1__ARRAY;
+
+public class FunctionPassingArray {
 
     public static int changeNumber(int[] arr) {
         

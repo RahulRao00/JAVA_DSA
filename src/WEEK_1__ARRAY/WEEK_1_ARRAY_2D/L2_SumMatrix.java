@@ -12,6 +12,7 @@ public class L2_SumMatrix {
                 matrix[i][j] = sc.nextInt();
             }
         }
+        
         // printing the matrix
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
@@ -26,5 +27,8 @@ public class L2_SumMatrix {
             }
         }
         System.out.print( "Sum is : " +sum);
+        
+        sc.close();
     }
+    
 }

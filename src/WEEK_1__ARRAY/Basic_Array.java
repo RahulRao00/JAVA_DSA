@@ -1,5 +1,6 @@
+package src.WEEK_1__ARRAY;
 
-    class Basic_Array {
+class Basic_Array {
         public static void main(String[] args) {
             int arr[] = {1,2,3,4,5,6};
 

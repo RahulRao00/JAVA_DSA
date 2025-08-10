@@ -1,15 +1,15 @@
-// package src.WEEK_10_LinkedList;
+package src.WEEK_10_LinkedList;
 
 
-// Node creating in which there is  data and reference variable 
-// reference variable over here is also of type node which further have  data and node 
- 
+// Creating a class Node which have data and reference of the next Node
+// reference variable is also of type node which further have  data and node ...
+
 class Node {
 
-    int data ;
+    int data;
     Node next;
 
-    Node( int data ) {
+    Node(int data) {
         this.data = data;
         this.next = null;
     }
@@ -18,15 +18,15 @@ class Node {
 public class L0_BasicNodes {
 
     public static void main(String[] args) {
-        
-    Node a = new Node(10);
-    System.out.println(a);   // this print a kind of address/reference of node 
-    System.out.println(a.data); // data of the node 
-    System.out.println(a.next); // null 
 
-    Node b = new Node(10);
-    Node c = new Node(10);
-    Node d = new Node(10);
-    
+        Node a = new Node(10);
+        System.out.println(a);   // this print a kind of address/reference of node
+        System.out.println(a.data); // data of the node
+        System.out.println(a.next); // null
+
+        Node b = new Node(10);
+        Node c = new Node(10);
+        Node d = new Node(10);
+
     }
 }

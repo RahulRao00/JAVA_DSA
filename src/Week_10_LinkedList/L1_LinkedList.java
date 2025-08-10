@@ -1,11 +1,11 @@
-// package src.WEEK_10_LinkedList;
+package src.WEEK_10_LinkedList;
 
 
 public class L1_LinkedList {
 
     // print using recursion 
-    public static void displayRecursive( Node head) {
-        if(head == null) return;
+    public static void displayRecursive(Node head) {
+        if (head == null) return;
         System.out.println(head.data);
         displayRecursive(head.next);
 
