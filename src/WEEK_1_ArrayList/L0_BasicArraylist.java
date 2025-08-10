@@ -1,8 +1,12 @@
 package src.WEEK_1_ArrayList;
 import java.util.*;
+
 public class L0_BasicArraylist {
         public static void main(String[] args) {
+
+
         ArrayList <Integer> arr = new ArrayList<>();
+        arr.add(5);
         arr.add(0,10);  // arr[0] = 1 
         arr.add(1,20);  // arr[1] = 2
         arr.add(2,30);

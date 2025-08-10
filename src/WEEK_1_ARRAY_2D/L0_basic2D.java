@@ -6,7 +6,7 @@ public class L0_basic2D {
 
         Scanner sc = new Scanner(System.in);
 
-        int matrix[][] = new int[3][3];
+        int[][] matrix = new int[3][3];
         int n = matrix.length, m = matrix[0].length;
         
         System.out.print("Enter the elements of the matrix 3*3 : ");

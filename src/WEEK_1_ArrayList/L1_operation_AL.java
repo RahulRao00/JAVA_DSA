@@ -1,8 +1,11 @@
 package src.WEEK_1_ArrayList;
 import java.util.*;
+
+
 public class L1_operation_AL {
         
         public static void main(String[] args) {
+
             ArrayList<Integer> brr = new ArrayList<>();
 
             brr.add(10);  // operation - O(1) 

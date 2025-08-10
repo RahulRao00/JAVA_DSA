@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class L1_LargestElementInMAtrix {
 
     // this calculate the maximum value in the matrix
-    public static int largestElement(int matrix[][]) {
+    public static int largestElement(int[][] matrix) {
         int n = 3, m = 3;
         // int i = 0,j = 0;
         // int max = matrix[0][0];
@@ -27,7 +27,7 @@ public class L1_LargestElementInMAtrix {
     }
 
     // this calculate the minimum value in the matrix
-    public static int smallestElement(int matrix[][]) {
+    public static int smallestElement(int[][] matrix) {
         int n = matrix.length, m = matrix[0].length;
         // int i = 0,j = 0;
         // int min = matrix[0][0];
@@ -48,7 +48,7 @@ public class L1_LargestElementInMAtrix {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int matrix[][] = new int[3][3];
+        int[][] matrix = new int[3][3];
         int n = matrix.length, m = matrix[0].length;
         System.out.print("Enter the elements of the matrix 3*3 : ");
         for (int i = 0; i < n; i++) {
@@ -56,10 +56,11 @@ public class L1_LargestElementInMAtrix {
                 matrix[i][j] = sc.nextInt();
             }
         }
+
         // printing the matrix
-        for (int i = 0; i < n; i++) {
+        for (int[] ints : matrix) {
             for (int j = 0; j < m; j++) {
-                System.out.print(matrix[i][j] + " ");
+                System.out.print(ints[j] + " ");
             }
             System.out.println();
         }
