@@ -16,6 +16,7 @@ public class Basic {
             arr[i] = sc.nextInt();
         }
 
+
         // find the value 5 in the given array
         for (int i = 0; i < 5; i++) {
 

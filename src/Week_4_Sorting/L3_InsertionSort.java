@@ -1,7 +1,6 @@
 package src.WEEK_4_Sorting;
 import java.util.Scanner;
 
-
 public class L3_InsertionSort {
 
     public static void main(String[] args) {

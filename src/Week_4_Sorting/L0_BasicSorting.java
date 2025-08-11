@@ -10,6 +10,7 @@ public class L0_BasicSorting {
        
         // System.out.println(Arrays.sort(arr));
         Arrays.sort(arr);
+
         for (int i : arr) {
             System.out.println(i);
         }

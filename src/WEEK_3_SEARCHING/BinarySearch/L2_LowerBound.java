@@ -1,4 +1,4 @@
-package src.WEEK_3_SEARCHING.Week_3_BinarySearch;
+package src.WEEK_3_SEARCHING.BinarySearch;
 
 
 public class L2_LowerBound {
