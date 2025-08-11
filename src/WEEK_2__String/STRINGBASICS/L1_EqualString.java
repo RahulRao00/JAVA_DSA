@@ -6,7 +6,7 @@ public class L1_EqualString {
         String name1 = "Rahul";
         String name2 = new String("Rahul");
 
-        //  == check at object level 
+        //  == check at object reference  level
 
         if(name == name1){
             System.out.println("Strings  equal");

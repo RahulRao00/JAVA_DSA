@@ -3,7 +3,8 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class L0_BasicSorting {
-    // Sorting Methods 
+
+    // Sorting in built  Methods
     public static void main(String[] args) {
         
         int arr[] = {2,4,6,8,3,10,22,56,78};
