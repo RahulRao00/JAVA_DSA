@@ -9,7 +9,6 @@ public class L2_Print {
         System.out.println(n);  // Work
         print(n - 1);           // Call    
         System.out.println(n);  // Work
-
     }
 
     public static void main(String[] args) {

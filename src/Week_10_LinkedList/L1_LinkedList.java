@@ -10,7 +10,6 @@ public class L1_LinkedList {
         displayRecursive(head.next);
 
     }
-
     public static void main(String[] args) {
 
         Node a = new Node(10); // head node

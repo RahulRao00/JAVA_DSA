@@ -16,7 +16,6 @@ public class Basic {
             arr[i] = sc.nextInt();
         }
 
-
         // find the value 5 in the given array
         for (int i = 0; i < 5; i++) {
 
@@ -24,9 +23,7 @@ public class Basic {
                 System.out.println(arr[i] + " is at index " + i);
                 return;
             }
-
         }
-
     }
-
 }
+

@@ -1,4 +1,4 @@
-package src.WEEK_1_ARRAY_2D.Week_3_BinarySearch;
+package src.WEEK_3_SEARCHING.BinarySearch;
 
 public class L1_BinarySearch {
 
@@ -9,11 +9,13 @@ public class L1_BinarySearch {
         int target = 46;
 
         int start = 0;
-
         int end = arr.length-1;
 
         while (start < end) {
-            int mid  = (start + end) / 2;
+
+          //  int mid  = (start + end) / 2; ->  this may exceed the limit of the int
+          int mid  = start + ( end - start ) / 2;  //better way of writing the same logic
+
             if(arr[mid] == target) {
                 System.out.println("Element found at index : " + mid);
                 break;
@@ -24,6 +26,7 @@ public class L1_BinarySearch {
             else {
                 start  = mid + 1;
             }
+
         }
     }
 }

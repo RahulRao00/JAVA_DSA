@@ -1,6 +1,5 @@
 package src.WEEK_10_LinkedList;
 
-
 public class L2_ReverseLinkedList {
 
     public static void reverseLinkedList(Node head) {

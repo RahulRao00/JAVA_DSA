@@ -2,9 +2,9 @@ package src.WEEK_2__String.STRINGBASICS;
 
 public class L7_SubString {
 
-    public static String sunString(String str, int startind, int endind) {
+    public static String sunString(String str, int startInd, int endInd) {
         String sub = "";
-        for (int i = startind; i < endind; i++) {
+        for (int i = startInd; i < endInd; i++) {
             sub += str.charAt(i);
         }
         return sub;
@@ -17,7 +17,7 @@ public class L7_SubString {
             }
         }
     }
-    
+
     public static void main(String[] args) {
         String name = "RahulRao";
         // System.out.println(name.substring(0, 4));
@@ -27,7 +27,7 @@ public class L7_SubString {
         allSubStrings(name);
     }
 }
-    
+
 
 
 

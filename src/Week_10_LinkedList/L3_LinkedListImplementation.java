@@ -27,7 +27,5 @@ public class L3_LinkedListImplementation {
             temp = temp.next;
             counter++;
         }
-
     }
-
 }

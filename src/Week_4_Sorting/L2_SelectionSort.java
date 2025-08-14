@@ -1,10 +1,9 @@
 package src.WEEK_4_Sorting;
 
-
 public class L2_SelectionSort {
 
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
 
         int arr[] = {2,4,8,9,1,-4,0,11};
         int min = Integer.MAX_VALUE;
@@ -14,7 +13,6 @@ public class L2_SelectionSort {
                     min = arr[i];
                 }
         }
-
         System.out.println(min);
     }
 }

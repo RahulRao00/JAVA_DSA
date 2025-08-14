@@ -3,9 +3,10 @@ package src.WEEK_2__String.STRINGBUILDER;
 public class CapitalLetterProblem {
 
     public static void main(String[] args) {
-        
+
+
         String str = " hello i am rahul rao ";
-        StringBuilder ans = new StringBuilder("");
+        StringBuilder ans = new StringBuilder(" ");
 
         for(int i = 0; i< str.length(); i++){
             if(str.charAt(i) == ' '){
@@ -15,5 +16,7 @@ public class CapitalLetterProblem {
         }
     }
 }
+
+
 
 

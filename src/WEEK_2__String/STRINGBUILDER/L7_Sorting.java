@@ -16,7 +16,6 @@ public class L7_Sorting {
         Arrays.sort(c);
         System.out.println(c);
 
-
         // ---------------------------
 
         // String Array -> kind of 2-D Array 

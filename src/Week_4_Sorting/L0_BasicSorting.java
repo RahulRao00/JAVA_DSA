@@ -15,7 +15,6 @@ public class L0_BasicSorting {
         for (int i : arr) {
             System.out.println(i);
         }
-
     }
 }
 

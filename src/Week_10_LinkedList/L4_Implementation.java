@@ -81,7 +81,6 @@ class SLL {
         System.out.println("\nSize is : " + size);
     }
 }
-
 public class L4_Implementation {
     public static void main(String[] args) {
 
