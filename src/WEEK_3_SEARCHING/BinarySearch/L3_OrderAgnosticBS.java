@@ -9,6 +9,8 @@ public class L3_OrderAgnosticBS {
         int[] arr = {2,3,5,6,8,9,1,34,56,78};
 
         boolean isAsc = arr[0] < arr[arr.length-1];
+        System.out.println(isAsc);
+
 
 
     }
