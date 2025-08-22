@@ -4,7 +4,7 @@ package src.WEEK_10_LinkedList;
 // Creating a class Node which have data and reference of the next Node
 // reference variable is also of type node which further have  data and node ...
 
-class Node {
+ class Node {
 
     int data;
     Node next;

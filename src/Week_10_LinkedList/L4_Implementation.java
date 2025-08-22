@@ -2,7 +2,6 @@ package src.WEEK_10_LinkedList;
 
 class SLL {
 
-    
     Node head;
     Node tail;
     int size;
@@ -69,6 +68,29 @@ class SLL {
         size++;
     }
 
+    // this will return the data on the basis of the index
+    int getData(int index ) {
+        Node temp = head;
+        for( int i =0; i< index-1; i++ ) {
+            temp = temp.next;
+        }
+        return temp.data;
+    }
+
+    // Delete  node form the linkedList
+
+    void delete( int index  ) {
+        Node temp = head;
+
+        for ( int i = 0; i< index -1; i++ ) {
+            temp = temp.next;
+        }
+        temp.next = temp.next.next;
+        size--;
+
+    }
+
+
     //  ......................................................................
     // this will display the linkedList
     void displaySLL() {
@@ -84,6 +106,7 @@ class SLL {
         System.out.println("\nSize is : " + size);
     }
 }
+
 public class L4_Implementation {
     public static void main(String[] args) {
 
@@ -102,18 +125,24 @@ public class L4_Implementation {
 
         list.displaySLL();
 
-        list.size();
+       // list.size();
 
-        list.insertAtStart(1000);
+     //   list.insertAtStart(1000);
+     //   list.displaySLL();
+      //  list.size();
+
+       // list.insertAtIndex(2, 99);
+       // list.displaySLL();
+
+        //list.insertAtIndex(10, 1000);
+       // list.displaySLL();
+
+        System.out.println();
+        System.out.println( "The data is : " + list.getData(3));
+
+        list.delete(3);
         list.displaySLL();
         list.size();
-
-        list.insertAtIndex(2, 99);
-        list.displaySLL();
-
-        list.insertAtIndex(10, 1000);
-        list.displaySLL();
-
 
     }
 }
