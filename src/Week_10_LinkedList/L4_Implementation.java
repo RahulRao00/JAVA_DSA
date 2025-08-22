@@ -2,6 +2,7 @@ package src.WEEK_10_LinkedList;
 
 class SLL {
 
+    
     Node head;
     Node tail;
     int size;
@@ -17,10 +18,10 @@ class SLL {
             tail.next = temp;
             tail = temp;
         }
-
         size++;
     }
 
+    //....................................................................
     // this will add the node at beginning of the linkedList
     void insertAtStart(int data) {
         Node temp = new Node(data);
@@ -36,6 +37,7 @@ class SLL {
         size++;
     }
 
+    // .......................................................
     // this will insert the Node at the given index
     void insertAtIndex(int idx, int data) {
 
@@ -55,7 +57,7 @@ class SLL {
         Node temp = new Node(data);
         Node x = head;
 
-        // this for loop bring the pointer the insertion node
+        // this for loop bring the pointer to the insertion node
         for (int i = 0; i < idx; i++) {
             x = x.next;
         }
@@ -67,6 +69,7 @@ class SLL {
         size++;
     }
 
+    //  ......................................................................
     // this will display the linkedList
     void displaySLL() {
         Node temp = head;
@@ -108,8 +111,9 @@ public class L4_Implementation {
         list.insertAtIndex(2, 99);
         list.displaySLL();
 
-        list.insertAtIndex(10, 01000);
+        list.insertAtIndex(10, 1000);
         list.displaySLL();
+
 
     }
 }
