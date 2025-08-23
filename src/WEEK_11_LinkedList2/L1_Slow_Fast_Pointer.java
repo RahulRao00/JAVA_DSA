@@ -34,6 +34,6 @@ public class L1_Slow_Fast_Pointer {
         System.out.println(fast.data);
 
     }
-
-
 }
+
+
