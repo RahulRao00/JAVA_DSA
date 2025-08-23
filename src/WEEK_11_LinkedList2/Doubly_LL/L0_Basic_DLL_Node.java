@@ -10,8 +10,6 @@ class Node {
     }
 }
 
-
-
 public class L0_Basic_DLL_Node {
 
     public static void main(String[] args) {
@@ -60,6 +58,6 @@ public class L0_Basic_DLL_Node {
             System.out.print(temp.data + " ->");
             temp = temp.next;
         }
-        
+
     }
 }
